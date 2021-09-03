@@ -15,13 +15,28 @@ HTML 내부에 자바코드를 삽입하는 형식
 서블릿 기반의 서버 스크립트 기술  
 
 ### ORM 
-객체와 관계형 DB를 맵핑  
+객체와 관계형 데이터베이스의 데이터를 자동으로 매핑(연결)해주는 것  
 SQL문을 직접 만들지 않아도 된다. 
 
+
 ### jpa
-jpa는 자바 orm 기술에 대한 표준명세를 정의한것이다 표준 명세일뿐이라서 jpa만으로는 무언가 할수없음  
+jpa는 자바 orm 기술에 대한 표준명세를 정의한것이다  
+표준 명세일뿐이라서 jpa만으로는 무언가 할수없음  
 실제로 jpa를 구현한 구현체들이 hibernate 등이 있음   
 jpa를 사용하기 이전에는 jdbc 사용 해서 직접 db connection 한후 sql을 전달해 결과을 받아옴
+
+### Hibernate 하이버네이트
+JPA 명세의 구현체  
+javax.persistence.EntityManager와 같은 JPA의 인터페이스를 직접 구현한 라이브러리  
+JPA
+EntityManagerFactory, EntityManager, EntityTransaction
+Hibernate
+SessionFactory, Session, Transcation
+Hibernate는 위의 JPA의 인터페이스를 상속받고 각각 Impl로 구현
+
+### 구현체
+구현체란 인터페이스를 구현한 클래스라는 뜻  
+구현 클래스 혹은 실체 클래스 라고도 부름
 
 ### JDBC
 db에 접근할 수 있도록 자바에서 제공하는 api이다  
