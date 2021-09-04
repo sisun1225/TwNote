@@ -25,23 +25,34 @@ jpa는 자바 orm 기술에 대한 표준명세를 정의한것이다
 실제로 jpa를 구현한 구현체들이 hibernate 등이 있음   
 jpa를 사용하기 이전에는 jdbc 사용 해서 직접 db connection 한후 sql을 전달해 결과을 받아옴
 
-### Hibernate 하이버네이트
+### Hibernate ORM 하이버네이트
+자바 언어를 위한 객체 관계 매핑 프레임워크이다.  
 JPA 명세의 구현체  
 javax.persistence.EntityManager와 같은 JPA의 인터페이스를 직접 구현한 라이브러리  
-JPA
-EntityManagerFactory, EntityManager, EntityTransaction
-Hibernate
-SessionFactory, Session, Transcation
-Hibernate는 위의 JPA의 인터페이스를 상속받고 각각 Impl로 구현
+JPA의 핵심인 EntityManagerFactory, EntityManager, EntityTransaction 를  
+Hibernate에서는 SessionFactory, Session, Transcation 으로 JPA의 인터페이스를 상속받고 각각 Impl로 구현
 
 ### 구현체
 구현체란 인터페이스를 구현한 클래스라는 뜻  
 구현 클래스 혹은 실체 클래스 라고도 부름
 
+### mybatis
+자바 오브젝트와 SQL사이의 자동 매핑 기능을 지원하는 ORM프레임 워크이다   
+프로그램에 있는 SQL쿼리들을 한 구성파일에 구성하여 코드와 SQL을 분리 할수있다.
+
 ### JDBC
 db에 접근할 수 있도록 자바에서 제공하는 api이다  
 자바 프로그램이 데이터베이스와 연결되어 데이터를 주고받을 수 있게 해주는 프로그래밍 인터페이스이다  
 역할은 응용프로그램과 dbms간의 통신을 중간에서 변역해주는 역할  
+
+### jdbc와 mybatis 차이
+JDBC는 자바에서 자바에서 데이터베이스에 접속할 수 있도록 하는 자바 API  
+JDBC는 데이터베이스에서 자료를 쿼리하거나 업데이트 하는 방법을 제공  
+MyBatis 는 jdbc에서 사용해야 하는 Connection, Statement등을 mybatis가 직접 관리해서 코드를 줄여준다.  
+jdbc의 PrepareStatment와 같은 sql injection을 고려하지 않아도 됨.  
+
+### sql injection
+sql 쿼리 문을 전송하여 공격자가 원하는 데이터베이스의 정보를 가져오는 해킹 기법
 
 ### 커넥션풀
 DB와 연결하는 커넥션을 미리 생성해두고 풀에 저장해두었다가 필요할때 꺼내쓰고 사용 후에 다시 반환하는 기법  
@@ -118,8 +129,14 @@ REST API’를 제공하는 웹 서비스를 ‘RESTful’하다고 할 수 있�
 ### 인터페이스
 인터페이스란 사물간, 사람간, 또는 사람과 사물간에 상호 작용을 할수있도록 연결해주는 장치, 방법, 형식, 공간 통칭  
   
-  
-  
+## 쿼리 dsl
+SQL, JPQL을 코드로 작성할 수 있도록 도와주는 빌더 API  
+Member.java @Entity를 가지고, QMember.java라는 QueryDSL 전용 객체를 만듬  
+QMember 객체를 가지고 쿼리를 코드로 짤 수 있다.
+동적 쿼리이다. BooleanBuilder에 조건넣어주면됨..
+
+### jpql
+정적쿼리
   
   
   
