@@ -140,7 +140,7 @@ QMember 객체를 가지고 쿼리를 코드로 짤 수 있다.
 특정테이블 데이터를 추출하려면  
 select * from testtable 처럼해야하지만  
 jpql을 이용하면  
-select p from Test p 로 하면된다
+select p from Test p 로 하면된다  
 @Data  
 @Table(name ="testtable")  
 @Entitiy  
