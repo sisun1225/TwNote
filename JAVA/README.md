@@ -30,6 +30,9 @@ jpa는 자바 orm 기술에 대한 표준명세를 정의한것이다
 실제로 jpa를 구현한 구현체들이 hibernate 등이 있음   
 jpa를 사용하기 이전에는 jdbc 사용 해서 직접 db connection 한후 sql을 전달해 결과을 받아옴
 
+마지막 프로젝트에서 사용했던 CrudRepository 가 jpa의 기능 
+paging, sorting, 같은 기능들을 사용해야한다면 JpaRepository를 사용하면됨..
+
 ### Hibernate ORM 하이버네이트
 자바 언어를 위한 객체 관계 매핑 프레임워크이다.  
 JPA 명세의 구현체  
