@@ -15,8 +15,9 @@
 java에서는 구현 불가능
 * Call by value(값에 의한 호출)  
 인자로 받은 값을 복사하여 처리  
+[참고](https://github.com/sisun1225/AlgorithmPractice/blob/master/src/algorithm/Pra0001.java)
 * Call by reference(참조에 의한 호출)  
 인자로 받은 값의 주소를 참조하여 직접 값에 영향을 줌  
 * 값을 복사하여 처리하느냐, 직접 참조하느냐의 차이  
-
+[참고](https://github.com/sisun1225/AlgorithmPractice/blob/master/src/algorithm/Pra0002.java)
 
