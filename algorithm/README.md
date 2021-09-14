@@ -21,3 +21,8 @@ java에서는 구현 불가능
 * 값을 복사하여 처리하느냐, 직접 참조하느냐의 차이  
 [참고](https://github.com/sisun1225/AlgorithmPractice/blob/master/src/algorithm/Pra0002.java)
 
+### 선택 정렬
+가장 작은 카드를 찾아서 첫번째 카드와 바꾸고  
+두번째 작은 카드를 찾아서 두번째 카드와 바꾸고  
+세번째 작은 카드를 찾아서 세번째 카드와 바꾸는 과정을 계속 반복하면서 정렬한다.  
+[참고](https://github.com/sisun1225/AlgorithmPractice/blob/master/src/algorithm/Pra0003.java)
