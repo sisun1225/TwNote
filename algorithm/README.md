@@ -34,6 +34,6 @@ java에서는 구현 불가능
 ### 재귀
 알고리즘을 설계할때 동일한 문제의 조금 더 작은 경우를 해결함으로써 문제를 해결하는 것  
 *팩토리얼  
-사물의 순서를 정할때 얼마나 많은 방법이 있는지 구할때 윺용  
+사물의 순서를 정할때 얼마나 많은 방법이 있는지 구할때 유용  
 [참고](https://github.com/sisun1225/AlgorithmPractice/blob/master/src/algorithm/Pra0005.java)
 
