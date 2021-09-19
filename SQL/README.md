@@ -8,6 +8,7 @@ LIMIT - 상위 몇개만나오도록 제한가능
 ORDERBY DESC  
 ORDERBY ASC  
 DISTINCT 칼럼명 - 셀렉트 부분에사용 중복제거  
+NVL(SALARY, 0)
 
 ### WHERE
 
