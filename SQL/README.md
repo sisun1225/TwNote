@@ -35,3 +35,34 @@ LEFT JOIN
 ### SUBQUERY
 select 안에 또다른 select가 들어가있는 것
 
+
+
+rownum  
+rowid  
+
+
+### 테이블 생성
+create table 테이블명  
+
+create table tw_table(  
+id number(7) primary key,  
+name varchar2(25) not null );  
+
+not null   
+unique 중복데이터 입력 막는다  
+primary key 자동으로 unique 부여 null허용 안함  
+foreign key   
+check  
+
+### 테이블 구조 변경  
+alter table 테이블명  
+add~~~~  
+modify ~~~~~  
+MODIFY (phone varchar2(20) );  
+drop ~~~~    
+DROP COLUMN phone;  
+set unused ~~~~  
+SET UNUSED  COLUMN phone;  
+rename ~~~~  
+truncate ~~~~  
+comment ~~~~  
