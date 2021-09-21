@@ -33,3 +33,5 @@ LEFT JOIN
 
 
 ### SUBQUERY
+select 안에 또다른 select가 들어가있는 것
+
