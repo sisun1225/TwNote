@@ -72,7 +72,7 @@ DROP TRIGGER 트리거_이름
 
 
 ### 오라클 계정 관련
-계정 비밀번호 변경 - alter user sys identified by 1234;  
+계정 비밀번호 변경 - alter user 계정명 identified by 변경할 비밀번호;  
 현재 접속중 - show user  
 sys as sysdba  
 
