@@ -36,11 +36,6 @@ LEFT JOIN
 select 안에 또다른 select가 들어가있는 것
 
 
-
-rownum  
-rowid  
-
-
 ### 테이블 생성
 create table 테이블명  
 
@@ -66,3 +61,8 @@ SET UNUSED  COLUMN phone;
 rename ~~~~  
 truncate ~~~~  
 comment ~~~~  
+
+### 트리거
+SELECT * FROM ALL_TRIGGERS;  
+DROP TRIGGER 트리거_이름
+
