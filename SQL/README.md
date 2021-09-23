@@ -28,7 +28,6 @@ INNER JOIN 테이블명
 ON 테이블A.칼럼명 = 테이블B.칼럼명  
 alias(별명) 사용해서 테이블명을 줄여주는 것 가능  
 from과 조인 테이블명에 AS 별명 사용  
-
 LEFT JOIN
 
 
@@ -66,3 +65,25 @@ comment ~~~~
 SELECT * FROM ALL_TRIGGERS;  
 DROP TRIGGER 트리거_이름
 
+
+### ansi sql
+미국 표준협회에서 표준 sql문을 정립 시켜 놓은 것...
+
+
+
+### 오라클 계정 관련
+계정 비밀번호 변경 - alter user sys identified by 1234;  
+현재 접속중 - show user  
+sys as sysdba  
+
+sys  
+오라클 시스템 총 관리자, db생성과 삭제도 가능하다  
+sysdba 권한을 갖는다.  
+유지,관리 생성하기위한 모든 권한을 갖는 계정  
+
+system  
+sys와 유사하지만 db생성과 삭제가 불가능하다  
+생성된 db를 운영 관리하기 위한 관리자계정이다  
+
+sysdba  
+sysoper의 권한 뿐 아니라 데이터베이스 생성과 삭제, 오라클의 모든 권한을 갖는다.  
