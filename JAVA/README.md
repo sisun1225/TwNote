@@ -185,10 +185,20 @@ class Test {
 ### web.xml
 서블릿과 URL을 매핑 alias 설정  
 브라우저가 java servlet에 접근하기위해 was(tomcat)에 필요한 정보를 알려줘야 해당 servlet을 호출할수있는데 이것을 정하는곳  
+최초로 WAS가 최초로 구동될 때, 각종 설정을 정의  
 
 ### pom.xml 
 메이븐의 빌드정보를 담고있음  
 프로젝트 관리 및 빌드에 필요한 환경 설정, 의존성 관리 등의 정보들을 포함...  
+
+### root-context.xml
+mvc설정과 관련된 여러 처리를 담당하는 설정파일  
+dao,vo,service등과 같은 파일을 어떻게 사용할것인가 빈객체들을 관리하는 문서   
+ 
+
+### servlet-context.xml
+web.xml에서 DispatcherServlet 등록 시 설정한 파일  
+url과 관련된 controller나, @(어노테이션), ViewResolver 등의 설정을 하는 곳  
 
   
 ### 컬렉션 프레임워크
