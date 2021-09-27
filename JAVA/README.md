@@ -17,7 +17,8 @@ HTML 내부에 자바코드를 삽입하는 형식
 ### JSTL
 일반적으로 jstl +EL의 조합을 말한다  
 JSP 코드를 관리하고 자바서버 페이지 표준 태그 라이브러리이다.  
-
+<%@ taglib uri="http://java.sun.com/sjp/jstl/core" prefix="c" %>  
+프로젝트때 사용했던 c태그를 말한다....  
 
 ### ORM 
 객체와 관계형 데이터베이스의 데이터를 자동으로 매핑(연결)해주는 것  
@@ -194,12 +195,12 @@ class Test {
 ### root-context.xml
 mvc설정과 관련된 여러 처리를 담당하는 설정파일  
 dao,vo,service등과 같은 파일을 어떻게 사용할것인가 빈객체들을 관리하는 문서   
- 
+처음에 프로젝트 생성시에는 아무 내용도 없음...   
+이곳은 공통빈을 설정하는 곳으로 주로 View 지원을 제외한 bean을 설정 (db 등등)
 
 ### servlet-context.xml
 web.xml에서 DispatcherServlet 등록 시 설정한 파일  
 url과 관련된 controller나, @(어노테이션), ViewResolver 등의 설정을 하는 곳  
-
   
 ### 컬렉션 프레임워크
 다수의 데이터를 쉽고 효과적으로 처리할수있는 표준화된 방법을 제공하는 클래스의 집합  
