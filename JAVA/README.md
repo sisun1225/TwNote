@@ -141,6 +141,10 @@ REST API(REpresentational State Transfer)는 웹상에서 사용되는 여러 �
 해당 리소스에 대한 행위를 HTTP Method(POST, GET, PUT, DELETE)로 정의하고 해당 자원에 대한 CRUD Operation을 적용하는 방식을 말함...  
 RESTful  
 REST API’를 제공하는 웹 서비스를 ‘RESTful’하다고 할 수 있다  
+
+### URI
+인터넷에 있는 자원을 나타내는 유일한 주소  
+url, urn은 하위 개념  
   
 ### 프레임워크
 뼈대나 기본 구조를 뜻함 개발자는 이 프레임워크라는 뼈대위에서 개발하면됨 (ex 스프링)  
