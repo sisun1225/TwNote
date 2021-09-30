@@ -37,3 +37,7 @@ BSON으로 데이터가 쌓이기때문에 array나 nested로 데이터를 쉽�
 objectId는 pk와 같이 고유한 키를 의미  
 
 mongodb는 sql이 아니라 별도로 제공하는 api(SpiderMonkey 자바스크립트 엔진)를 통해 데이터를 조작  
+
+### bson
+json 형태의 문서를 바이너리 형태로 인코딩한 바이트 문자열  
+c언어의 데이터 형태를 사용  
