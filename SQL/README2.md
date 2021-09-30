@@ -22,3 +22,18 @@ JSON, XML과 같은 Collection 데이터 모델 구조를 채택
 node.js는 이벤트 기반, 논 블로킹 i/o 모델을 사용해 가볍고 효율적  
 node.js의 패키지 생태계인 npm은 세계에서 가장 큰 오픈 소스 라이브러리 생태계  
 
+## mongodb
+특징  
+document  
+base  
+open source  
+
+RDBMS가 database>tables>rows>columns로 구성되어있는데 documents는 row에 해당  
+계층은 database>collections>documents>field로 비슷  
+
+document 기반 데이터베이스는 rdbms와 다르게 자유롭게 데이터 구조를 잡을 수 있음  
+BSON으로 데이터가 쌓이기때문에 array나 nested로 데이터를 쉽게 넣을 수 있음  
+
+objectId는 pk와 같이 고유한 키를 의미  
+
+mongodb는 sql이 아니라 별도로 제공하는 api(SpiderMonkey 자바스크립트 엔진)를 통해 데이터를 조작  
