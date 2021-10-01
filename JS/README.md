@@ -9,8 +9,10 @@ XMLHttpRequest 객체를 이용해서 페이지를 새로 고치지 않고 일�
 (document.getElementById, innerHTML 등등..)
 
 
-
-
+### template literal
+ES6에서는 백틱(back-tick)이라는 기호(`)를 사용하여 정의    
+여러 줄에 걸쳐 문자열을 정의할 수도 있고, 자바스크립트의 변수를 문자열 안에 바로 연결할 수 있음  
+\n 사용 할필요없이 바로 엔터쳐도 되고 변수의 경우 ${......}형식으로 바로 보여줄수있음  
 
 
 
