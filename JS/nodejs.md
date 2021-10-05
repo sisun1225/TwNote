@@ -1,4 +1,4 @@
-# JS
+# nodejs
 
 ### 
 https://nodejs.org/en/  
@@ -56,3 +56,7 @@ pm2 start main.js --watch
 * 로그  
 pm2 log  
 
+
+### jade
+html 태그형태를 가지고 있고  
+여는태그 닫는태그 <>가 없음  
