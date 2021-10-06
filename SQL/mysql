@@ -1,0 +1,13 @@
+### OUTER JOIN 
+조인하는 테이블의 ON 절의 조건 중 한쪽의 데이터를 모두 가져옴
+SELECT *
+FROM A_TABLE AS A
+LEFT OUTER JOIN B_TABLE AS B    -- A_TABLE 기준
+ON A_TABLE.COL1 = B_TABLE.COL1
+
+### UNION ALL 
+여러 개의 SELECT 문 결과를 합침
+UNION ALL 이 중복제거하지 않으므로 UNION 보다 속도가 빠름
+select * from test.employees1
+union all
+select * from test.employees2;
