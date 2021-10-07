@@ -11,3 +11,27 @@ UNION ALL 이 중복제거하지 않으므로 UNION 보다 속도가 빠름
 select * from test.employees1
 union all
 select * from test.employees2;
+
+### 예제 데이터;
+CREATE TABLE `dept` (  
+  `dept_no` int(11) unsigned NOT NULL,  
+  `dept_name` varchar(32) NOT NULL,  
+  PRIMARY KEY (`dept_no`)  
+) ENGINE=InnoDB DEFAULT CHARSET=UTF8;  
+
+CREATE TABLE `emp` (  
+  `emp_no` int(11) unsigned NOT NULL,  
+  `dept_no` int(11) unsigned NOT NULL,  
+  `emp_name` varchar(32) NOT NULL,  
+  PRIMARY KEY  (`emp_no`),  
+  FOREIGN KEY (`dept_no`) REFERENCES `dept` (`dept_no`)  
+) ENGINE=InnoDB DEFAULT CHARSET=UTF8;  
+
+
+INSERT INTO dept (dept_no, dept_name) VALUES ('100', '인사부');  
+INSERT INTO dept (dept_no, dept_name) VALUES ('200', '영업부');  
+INSERT INTO dept (dept_no, dept_name) VALUES ('300', '생산부');  
+
+INSERT INTO emp (emp_no, dept_no, emp_name) VALUES ('2020001', '100', '민수');  
+INSERT INTO emp (emp_no, dept_no, emp_name) VALUES ('2021002', '200', '철수');  
+INSERT INTO emp (emp_no, dept_no, emp_name) VALUES ('2019003', '300', '민아');  
