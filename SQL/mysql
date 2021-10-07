@@ -12,6 +12,20 @@ select * from test.employees1
 union all
 select * from test.employees2;
 
+### SQL 오류 (1044): Access denied for user 'root'@'localhost' to database 'information_schema' */  
+로그인은 가능하지만 권한이 없어 해당 sql을 수행할 수 없다는 의미  
+
+### 현재 사용자 확인  
+SELECT USER();  
+
+
+### 현재 데이터베이스 확인
+SELECT DATABASE();  
+
+### 데이터 베이스 생성
+create database db명;  
+
+
 ### 예제 데이터;
 CREATE TABLE `dept` (  
   `dept_no` int(11) unsigned NOT NULL,  
