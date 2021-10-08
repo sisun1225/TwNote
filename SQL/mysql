@@ -30,6 +30,25 @@ create database db명;
 날짜를 따로 입력 안해줘도 자동 입력이 가능  
 (CURRENT_TIMESTAMP) 사용)  
 
+### INDEX KEY
+
+
+### UNIQUE INDEX
+중복 허용 안됨, NULL 허용 가능
+pk/fk 지정 불가능, pk 인식 불가능
+
+### USING BTREE
+
+
+### ENGINE=InnoDB
+Mysql Storage Engine은 물리적 저장장치에서 데이터를 어떤 식으로 구성하고 읽어올지를 결정하는 역할  
+트랜잭션을 지원, 커밋과 롤백, 데이터 복구 기능 제공  
+pk 제약을 제공
+
+### COLLATE
+ASCII, ISO-8859-1/Latin-1, EUC-KR  등과 같은 character encoding 설정  
+
+
 
 ### 예제 데이터;
 CREATE TABLE `dept` (  
