@@ -25,6 +25,11 @@ SELECT DATABASE();
 ### 데이터 베이스 생성
 create database db명;  
 
+### TIMESTAMP
+숫자형으로 변환되어 저장  
+날짜를 따로 입력 안해줘도 자동 입력이 가능  
+(CURRENT_TIMESTAMP) 사용)  
+
 
 ### 예제 데이터;
 CREATE TABLE `dept` (  
