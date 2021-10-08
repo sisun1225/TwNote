@@ -48,6 +48,13 @@ pk 제약을 제공
 ### COLLATE
 ASCII, ISO-8859-1/Latin-1, EUC-KR  등과 같은 character encoding 설정  
 
+### ifnull
+Column의 값이 null을 반환할 때, 다른 값으로 출력
+
+### GROUP_CONCAT
+select dept, GROUP_CONCAT(칼럼명) as '부서별팀원' from DEPARTMENT  
+department 테이블에서 dept별로 그룹지어서 부서별 팀원 칼럼을 만들어서 출력   
+
 
 
 ### 예제 데이터;
