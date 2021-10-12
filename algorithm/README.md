@@ -38,6 +38,10 @@ java에서는 구현 불가능
 사물의 순서를 정할때 얼마나 많은 방법이 있는지 구할때 유용  
 [참고](https://github.com/sisun1225/AlgorithmPractice/blob/master/src/algorithm/factorial.java)
 
-### 유클리드 호제법 
-2개의 자연수 또는 정식의 최대공약수를 구하는 알고리즘  
-호제법이란 두 수가 서로 상대방 수를 나누어서 결국 원하는 수를 얻는 알고리즘
+
+### sortedlist
+저장되는 값을 항상 정렬된 상태로 유지  
+값이 저장될 때마다 항상 값을 정렬해야 하니 저장은 느리지만 검색이 빠름  
+
+### arraylist
+값을 저장되는 순서대로 그대로 유지  

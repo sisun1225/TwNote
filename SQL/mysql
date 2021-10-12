@@ -1,0 +1,86 @@
+### OUTER JOIN 
+조인하는 테이블의 ON 절의 조건 중 한쪽의 데이터를 모두 가져옴
+SELECT *
+FROM A_TABLE AS A
+LEFT OUTER JOIN B_TABLE AS B    -- A_TABLE 기준
+ON A_TABLE.COL1 = B_TABLE.COL1
+
+### UNION ALL 
+여러 개의 SELECT 문 결과를 합침
+UNION ALL 이 중복제거하지 않으므로 UNION 보다 속도가 빠름
+select * from test.employees1
+union all
+select * from test.employees2;
+
+### SQL 오류 (1044): Access denied for user 'root'@'localhost' to database 'information_schema' */  
+로그인은 가능하지만 권한이 없어 해당 sql을 수행할 수 없다는 의미  
+
+### 현재 사용자 확인  
+SELECT USER();  
+
+
+### 현재 데이터베이스 확인
+SELECT DATABASE();  
+
+### 데이터 베이스 생성
+create database db명;  
+
+### TIMESTAMP
+숫자형으로 변환되어 저장  
+날짜를 따로 입력 안해줘도 자동 입력이 가능  
+(CURRENT_TIMESTAMP) 사용)  
+
+### INDEX KEY
+중복 허용  
+null 허용하지만 색인에 있어 성능저하가 있어서 null이 포함된 데이터의 경우 indexin 안함  
+
+### UNIQUE INDEX
+중복 허용 안됨, NULL 허용 가능
+pk/fk 지정 불가능, pk 인식 불가능
+
+### USING BTREE
+innoDB에서는 BTREE만 지원한다  
+인덱스 구현에 최적    
+인덱스 값들이 트리 데이트 구조로 저장되고 유연성 좋음  
+
+
+### ENGINE=InnoDB
+Mysql Storage Engine은 물리적 저장장치에서 데이터를 어떤 식으로 구성하고 읽어올지를 결정하는 역할  
+트랜잭션을 지원, 커밋과 롤백, 데이터 복구 기능 제공  
+pk 제약을 제공
+
+### COLLATE
+ASCII, ISO-8859-1/Latin-1, EUC-KR  등과 같은 character encoding 설정  
+
+### ifnull
+Column의 값이 null을 반환할 때, 다른 값으로 출력
+
+### GROUP_CONCAT
+select dept, GROUP_CONCAT(칼럼명) as '부서별팀원' from DEPARTMENT  
+department 테이블에서 dept별로 그룹지어서 부서별 팀원 칼럼을 만들어서 출력   
+
+
+
+### 예제 데이터;
+CREATE TABLE `dept` (  
+  `dept_no` int(11) unsigned NOT NULL,  
+  `dept_name` varchar(32) NOT NULL,  
+  PRIMARY KEY (`dept_no`)  
+) ENGINE=InnoDB DEFAULT CHARSET=UTF8;  
+
+CREATE TABLE `emp` (  
+  `emp_no` int(11) unsigned NOT NULL,  
+  `dept_no` int(11) unsigned NOT NULL,  
+  `emp_name` varchar(32) NOT NULL,  
+  PRIMARY KEY  (`emp_no`),  
+  FOREIGN KEY (`dept_no`) REFERENCES `dept` (`dept_no`)  
+) ENGINE=InnoDB DEFAULT CHARSET=UTF8;  
+
+
+INSERT INTO dept (dept_no, dept_name) VALUES ('100', '인사부');  
+INSERT INTO dept (dept_no, dept_name) VALUES ('200', '영업부');  
+INSERT INTO dept (dept_no, dept_name) VALUES ('300', '생산부');  
+
+INSERT INTO emp (emp_no, dept_no, emp_name) VALUES ('2020001', '100', '민수');  
+INSERT INTO emp (emp_no, dept_no, emp_name) VALUES ('2021002', '200', '철수');  
+INSERT INTO emp (emp_no, dept_no, emp_name) VALUES ('2019003', '300', '민아');  
