@@ -41,3 +41,14 @@ ES6에서 추가됨
 
 ### this
 객체의 프로퍼티가 함수일 경우, 이 함수를 메서드라고 부른다. 메서드 내부 코드에서 사용된 this는해당 메서드를 호출한 객체로 바인딩 된다.
+
+### window.onload  
+페이지가 모두 로드되는 시점 실행  
+window.onload = function () { ... }  
+
+### $(document).ready()  
+외부 리소스 및 이미지 로딩과 상관없이 DOM만 로드되면 바로 실행  
+$(document).ready(function(){ … });    
+$().ready(function(){ … });  
+$(function(){ … });  
+
