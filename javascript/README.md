@@ -52,3 +52,18 @@ $(document).ready(function(){ … });
 $().ready(function(){ … });  
 $(function(){ … });  
 
+
+### json 데이터 형태 
+{  
+    "name": "철수",  
+    "family": "가족1",  
+    "age": 1,  
+    "weight": 45  
+}  
+또는   
+human이 배열의 이름   
+"human": [  
+    {"name": "철수", "family": "가족1", "age": 1, "weight": 45},  
+    {"name": "영미", "family": "가족2", "age": 3, "weight": 45},  
+    {"name": "철민", "family": "가족3", "age": 7, "weight": 45}  
+]  
