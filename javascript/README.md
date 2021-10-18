@@ -60,7 +60,9 @@ $(function(){ … });
     "age": 1,  
     "weight": 45  
 }  
+
 또는   
+
 human이 배열의 이름   
 "human": [  
     {"name": "철수", "family": "가족1", "age": 1, "weight": 45},  
