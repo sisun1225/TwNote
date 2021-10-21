@@ -13,3 +13,22 @@ $('#abcd').val();
 $('.abcd').val();  
 * name 값 기준 가져오기  
 $('input[name=abcd]').val();  
+
+
+###메모
+
+<script>  
+    function fnGetdata(){  
+        var obj = $("[name=SEQ_CHK]");  
+        var chkArray = new Array(); // 배열 선언  
+ 
+        $('input:checkbox[name=SEQ_CHK]:checked').each(function() { // 체크된 체크박스의 value 값을 가지고 온다.  
+            chkArray.push(this.value);  
+        });  
+        $('#hiddenValue').val(chkArray);  
+        
+        alert($('#hiddenValue').val()); // 아래 체크박스가 모두 체크되어 있다면 1,2,3,4 가 출력 된다.  
+          
+    }  
+  
+</script>  
