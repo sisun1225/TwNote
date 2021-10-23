@@ -32,3 +32,12 @@ $('input[name=abcd]').val();
     }  
   
 </script>  
+
+
+### 
+attr  
+속성을 조회하거나 변경할 수 있는 메소드  
+
+prop  
+attr과 유사하지만 true/false 값을 가지는 속성들만을 위한 메소드  
+예를들어 hidden. readonly, checked  
