@@ -34,10 +34,13 @@ $('input[name=abcd]').val();
 </script>  
 
 
-### 
+### 속성값 
 attr  
 속성을 조회하거나 변경할 수 있는 메소드  
 
 prop  
 attr과 유사하지만 true/false 값을 가지는 속성들만을 위한 메소드  
 예를들어 hidden. readonly, checked  
+
+### if문
+조건에 변수만 들어간다면 변수에 값이 있는지 없는지 확인 후 실행  
