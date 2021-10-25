@@ -44,3 +44,23 @@ attr과 유사하지만 true/false 값을 가지는 속성들만을 위한 메�
 
 ### if문
 조건에 변수만 들어간다면 변수에 값이 있는지 없는지 확인 후 실행  
+
+
+
+###메모
+<문서>
+    <doc>1</doc>
+    <doc>2</doc>
+    <doc>3</doc>
+    <doc>4</doc>
+    <doc>5</doc>
+    <doc>6</doc>
+    <doc>7</doc>
+    <doc>8</doc>
+</문서>
+each를 통하여 doc 부분의 텍스트를 가져와야한다면...
+$(xml).find('문서').find('doc').each(function(i, e){  
+    console.log($(this).text());
+});
+
+
