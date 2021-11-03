@@ -58,8 +58,14 @@ Column의 값이 null을 반환할 때, 다른 값으로 출력
 ### GROUP_CONCAT
 select dept, GROUP_CONCAT(칼럼명) as '부서별팀원' from DEPARTMENT  
 department 테이블에서 dept별로 그룹지어서 부서별 팀원 칼럼을 만들어서 출력   
+GROUP_CONCAT( 칼럼명 SEPARATOR ',') 
+칼럼을 묶어서 지정한 기호로 하나의 칼럼으로 묶어준다.
 
+### instr('apple','p')
+찾는 문자열이 없을경우 0을 리턴  
+1개 이상 있을경우 첫번째 문자열의 시작 자리 수 리턴  
 
+### group by 컬럼 having 조건  
 
 ### 예제 데이터;
 CREATE TABLE `dept` (  
