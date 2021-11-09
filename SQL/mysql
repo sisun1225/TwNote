@@ -96,7 +96,9 @@ UNION이 속도가 느리고 많이 사용되지 않음
 
 
 
-
+### 랭킹 구할때 사용
+SELECT 칼럼 FROM 테이블명 ORDER BY 칼럼 desc LIMIT 2  
+오라클은 top3로 가능하다고 함
 
 
 
