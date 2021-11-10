@@ -69,3 +69,11 @@ human이 배열의 이름
     {"name": "영미", "family": "가족2", "age": 3, "weight": 45},  
     {"name": "철민", "family": "가족3", "age": 7, "weight": 45}  
 ]  
+
+
+
+### 자바스크립트  
+setTimeout(function() {  
+  console.log('Works!');  
+}, 3000);  
+3초후에 코드를 실행해라!  
