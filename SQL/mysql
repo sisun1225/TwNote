@@ -92,6 +92,8 @@ UNION이 속도가 느리고 많이 사용되지 않음
 
 
 ### rollup
+항목별 합계를 구할때
+
 ### grouping_id
 
 
