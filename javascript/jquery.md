@@ -47,7 +47,7 @@ attr과 유사하지만 true/false 값을 가지는 속성들만을 위한 메�
 
 
 
-###메모
+###each를 통하여 doc 부분의 텍스트를 가져와야한다면...
 <문서>
     <doc>1</doc>
     <doc>2</doc>
@@ -58,7 +58,6 @@ attr과 유사하지만 true/false 값을 가지는 속성들만을 위한 메�
     <doc>7</doc>
     <doc>8</doc>
 </문서>
-each를 통하여 doc 부분의 텍스트를 가져와야한다면...
 $(xml).find('문서').find('doc').each(function(index, item){  
     console.log($(this).text());
 });
