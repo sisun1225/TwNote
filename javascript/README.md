@@ -77,3 +77,6 @@ setTimeout(function() {
   console.log('Works!');  
 }, 3000);  
 3초후에 코드를 실행해라!  
+
+### document.body.appendChild
+바디에 자식 요소로 넣어라
