@@ -101,6 +101,16 @@ JPA를 한 단계 추상화시킨 Repository라는 인터페이스를 제공
 사용자가 Repository 인터페이스에 정해진 규칙대로 메소드를 입력하면,   
 Spring이 알아서 해당 메소드 이름에 적합한 쿼리를 날리는 구현체를 만들어서 Bean으로 등록  
 (JpaRepositoryImplementation)
+  
+JPA 처리를 담당하는 Repository  
+Repository<T, ID>  
+CrudRepository<T, ID>  
+PagingAndSortingRepository<T, ID>  
+JpaRepository<T, ID>  
+T는 Entity의 타입클래스    
+ID는 P.K 값의 Type    
+
+Repository, CrudRepository, PagingAndSoringRepository는 spring이 공통으로 사용하는 인터페이스  
 
 ### 스프링 빈(@Bean)
 Spring IoC 컨테이너가 관리하는 자바 객체를 빈(Bean)이라는 용어로 부름  
