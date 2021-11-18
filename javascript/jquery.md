@@ -67,3 +67,9 @@ item  키의 값
 
 #### .load()
 페이지를 동적으로 교체할때 사용
+
+
+### 아이디에 동적으로 페이지 넣기
+$(document).ready(function(){  
+$("#test").load("test.html");  
+});  
