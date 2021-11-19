@@ -80,3 +80,11 @@ setTimeout(function() {
 
 ### document.body.appendChild
 바디에 자식 요소로 넣어라
+
+
+### 문자열을 배열로 변환
+str.split();
+
+str.split(" "); 단어별로  
+str.split("");  글자별로
+str.split(","); 특정 구분자로  
