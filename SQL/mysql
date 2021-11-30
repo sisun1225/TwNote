@@ -110,7 +110,13 @@ SELECT 칼럼 FROM 테이블명 ORDER BY 칼럼 desc LIMIT 2
 
 
 
+###in조건
+-- OR조건 표현
+WHERE Condition = 'A'
+OR Condition = 'B'
 
+-- IN조건
+WHERE Condition IN ('A','B')
 
 
 
